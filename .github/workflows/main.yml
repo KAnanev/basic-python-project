@@ -2,7 +2,6 @@ name: Python CI
 
 on:
   - push
-  - pull_request
 
 jobs:
   build:
@@ -22,6 +21,7 @@ jobs:
         run: |
           pip install poetry
           make install
+          poetry add --dev wemake-python-styleguide
       - name: Run linter and pytest
         run: |
-          make check
+          make lint
