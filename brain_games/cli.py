@@ -6,5 +6,5 @@ import prompt
 
 def welcome_user():
     """Add Function."""
-    name = prompt.string('May I have your name? ')
-    sys.stdout.write('Hello, {user}!'.format(user=name))
+    name = prompt.string('May I have your name? \n')
+    sys.stdout.write('Hello, {user}!\n'.format(user=name))
