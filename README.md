@@ -8,3 +8,6 @@
 
 ### Game Calculator
 [![asciicast](https://asciinema.org/a/M5SnoIDlJIynJim1JM3owWslS.svg)](https://asciinema.org/a/M5SnoIDlJIynJim1JM3owWslS)
+
+### Game GCD
+[![asciicast](https://asciinema.org/a/vwVVtbvk9UmMOXH00P7y73ysn.svg)](https://asciinema.org/a/vwVVtbvk9UmMOXH00P7y73ysn)
