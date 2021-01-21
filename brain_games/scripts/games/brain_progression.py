@@ -1,10 +1,23 @@
 """Game progression."""
-import random
+import secrets
 
 from brain_games.brain_engine import decorator_game
 from brain_games.scripts import brain_games
 
 greeting = 'What number is missing in the progression?\n'
+
+
+def list_nums():
+    """Add description function.
+
+    Returns:
+        variables.
+    """
+    max_num = 25
+    num = 18
+    num_start = secrets.randbelow(max_num)
+    num_step = secrets.randbelow(num)
+    return list(range(num_start, 100, num_step))[:10]
 
 
 @decorator_game
@@ -18,11 +31,11 @@ def func_progression(*args, **kwargs):
     Returns:
         variables.
     """
-    list_num = [i for i in range(random.randint(1, 25), 100, random.randint(1, 18))][:10]
-    random_num = random.randint(0, len(list_num) - 1)
+    list_num = list_nums()
+    random_num = secrets.randbelow(len(list_num))
     answer = list_num[random_num]
     list_num[random_num] = '..'
-    question = (' '.join(str(i) for i in list_num))
+    question = (' '.join(str(itm) for itm in list_num))
     return answer, question
 
 
