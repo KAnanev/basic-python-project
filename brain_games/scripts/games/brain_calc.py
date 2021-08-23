@@ -29,7 +29,7 @@ def func_calc(*args, **kwargs):
         '*': num_one.__mul__(num_two),
     }
     operation_sign = choices(list(dict_operators.items()))
-    question = '{0}{1}{2}'.format(num_one, operation_sign[0][0], num_two)
+    question = '{0} {1} {2}'.format(num_one, operation_sign[0][0], num_two)
     return operation_sign[0][1], question
 
 
