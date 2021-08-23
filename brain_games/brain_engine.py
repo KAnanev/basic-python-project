@@ -37,8 +37,8 @@ def decorator_game(func):
                         answer,
                         exit_text,
                         result_game[0],
-                        ),
-                    )
+                    ),
+                )
                 break_point(name)
                 break
             else:
