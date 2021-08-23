@@ -14,11 +14,9 @@ def list_nums():
         variables.
     """
     random_num = secrets.SystemRandom()
-    
-    max_num = random_num.randrange(1, 11)
-    num = random_num.randrange(1, 11)
-    num_start = secrets.randbelow(max_num)
-    num_step = secrets.randbelow(num)
+    max_num = 11
+    num_start = random_num.randrange(1, max_num)
+    num_step = random_num.randrange(1, max_num)
     return list(range(num_start, 100, num_step))[:10]
 
 
