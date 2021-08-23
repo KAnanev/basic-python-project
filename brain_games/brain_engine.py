@@ -34,10 +34,8 @@ def decorator_game(func):
             elif exit_text:
                 sys.stdout.write(
                     '{0} {1} {2}.\n'.format(
-                                            answer,
-                                            exit_text,
-                                            result_game[0],
-                                            ),
+                        answer, exit_text, result_game[0],
+                    ),
                 )
                 break_point(name)
                 break
