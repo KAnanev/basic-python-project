@@ -13,8 +13,8 @@ def list_nums():
     Returns:
         variables.
     """
-    max_num = 25
-    num = 18
+    max_num = 10
+    num = 10
     num_start = secrets.randbelow(max_num)
     num_step = secrets.randbelow(num)
     return list(range(num_start, 100, num_step))[:10]
